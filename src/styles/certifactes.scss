@@ -1,0 +1,15 @@
+@use "./mixins" as *;
+
+.certifactes{
+    display: grid;
+    place-items: center;
+}
+.certificates-carousel{
+ width: 100%;
+}
+.abc0{
+    opacity: 0;
+}
+.abc1{
+    opacity: 1 !important;
+}

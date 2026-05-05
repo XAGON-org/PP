@@ -1,0 +1,125 @@
+@use "main";
+@use "./mixins" as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 98%;
+  padding: 2rem 2rem;
+  background-color: transparent;
+    border-radius: main.$btnbdrds2;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  margin: 1rem 1rem 0 0;
+
+  &.solid {
+    background: #2b2b2b9b;
+    backdrop-filter: blur(5px);
+    a{
+      color: main.$bgclr !important;
+        border: 1px solid #c7c7c7 !important;
+
+    }
+  }
+
+  .nav-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+  }
+
+  // Desktop nav
+  .desktop-menu {
+    display: flex;
+    gap: 1.5rem;
+
+    li {
+      list-style: none;
+
+      a {
+       color: main.$color;
+        border: main.$btnbrdr1;
+        border-radius: main.$btnbdrds1;
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: main.$btnpdn1;
+        margin: main.$mrgn1;
+      }
+    }
+  }
+
+  // Hamburger
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+.drawer{
+    display: none;
+}
+
+// MOBILE BEHAVIOR
+@media (max-width: 768px) {
+   
+ 
+
+  .navbar {
+    .desktop-menu {
+      display: none; // now ONLY desktop menu is hidden on mobile
+    }
+    .nav-inner {
+justify-content: start ;
+}
+
+    .hamburger {
+      display: block; // now hamburger actually shows
+    }
+  }
+  .drawer {
+    display: block;
+  }
+}
+
+// DRAWER
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  background: black;
+  color: white;
+  padding: 2rem;
+  z-index: 9999;
+
+  .close-btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  .drawer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    li {
+      list-style: none;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,394 @@
+@use "main";
+@use "./mixins" as *;
+
+.grid {
+  display: grid;
+}
+.grd {
+  grid-auto-flow: column;
+}
+.about-container {
+/*   grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, 1fr); */
+  gap: 0.4rem;
+  align-items: start;
+  justify-items: center;
+  text-align: center;
+  margin: 1rem 0;
+  
+}
+.abc {
+  background: #eee;
+  color: #000;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.github-contributions {
+  grid-row: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding: 2rem;
+  background: linear-gradient(180deg, #eee 0%, #515050 162%);
+  min-width: 50vw;
+  // z-index: -1;
+}
+.grlnk{
+  border-radius: 8px;
+  padding: 12px;
+  width: 220px;
+  background-color: #101411;
+  text-decoration: none;
+  color: #ddd;
+  transition: transform 0.1s;
+  .grh3{
+    font-size: 16px; 
+    font-weight: 600px;
+}
+}
+
+.abt{
+  width: 80%;
+  margin: 2rem 0;
+  p{
+    margin: 1rem 0;
+  }
+}
+
+.gccc {
+  background-color: #232925;
+  padding: 1.5rem;
+    display: grid;
+  border-radius: 16px;
+  .gcbox {
+    display: flex;
+    align-items: flex-start;
+  }
+  .gcwks {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    justify-content: space-around;
+    height: 12 * 7 + 6 * 6px;
+    margin-top: 10px;
+  }
+  .gcwkds {
+    font-size: 10px;
+    color: #e4ebe6;
+  }
+  .gcmnts {
+    display: flex;
+    flex-direction: column;
+  }
+  .gcmtnm {
+    width: 15px;
+    text-align: center;
+    font-size: 10px;
+    margin: 0.5px;
+    color: #e4ebe6;
+  }
+  .gccntbc {
+    width: 13px;
+    height: 13px;
+    margin: 1.5px;
+    border-radius: 2px;
+  }
+}
+
+.huuug {
+  background-color: #232925;
+  color: #fff;
+}
+
+.grdimg {
+  // width:18vw;
+  height: 7.2vw;
+}
+
+.self-intro {
+  text-align: start;
+  padding: 1rem;
+  letter-spacing: 4.2px;
+
+  .about-header {
+    font-family: main.$font-Recepts;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  .about-text {
+    letter-spacing: 0.8px;
+    line-height: 22px;
+  }
+  .about-contact {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.2rem;
+    .cont-icon {
+      svg {
+        width: 20px !important;
+        height: 20px !important;
+      }
+      color: #3d3d3d7d !important;
+    }
+  }
+}
+
+.Skills {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  padding: 20px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 26px;
+  padding: 28px;
+  position: relative;
+  height: 90%;
+  overflow: auto;
+
+  button {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .skill-logo {
+    max-width: 42px;
+    max-height: 42px;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
+
+.Skills {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 26px;
+  padding: 28px;
+  height: 90%;
+  overflow: auto;
+
+  button {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .skill-logo {
+    max-width: 42px;
+    max-height: 42px;
+    margin: auto;
+  }
+}
+
+/* DROPDOWN OUTSIDE CONTAINER */
+.skills-dropdown {
+  position: fixed;
+  transform: translate(-50%, -100%);
+  z-index: 999999999;
+  background: #0d1117;
+  border: 1px solid #222;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 22rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  text-align: start;
+}
+
+.skills-dropdown .skill-logo {
+  max-width: 46px;
+  max-height: 46px;
+  margin-right: 12px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #929292;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.skill-h3 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.skill-desc {
+  font-size: 13px;
+  color: #929292;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.projects-label {
+  font-size: 13px;
+  color: #929292;
+}
+
+.project-tag {
+  background: #545454;
+  color: #f0f0f0;
+  padding: 2.5px 6px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+
+@include respond(lg) {
+}
+
+@include respond(md) {
+  .grd {
+    grid-auto-flow: row;
+  }
+  .about-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 1rem 0;
+    height: 100%;
+  }
+  .self-intro {
+    .about-header {
+      font-size: 1.2rem;
+      margin: 0.6rem 0;
+    }
+    .about-text {
+      letter-spacing: 0.8px;
+      line-height: 22px;
+      font-size: 0.8rem;
+    }
+    .about-contact {
+      margin-top: 1rem;
+      .cont-icon {
+        svg {
+          width: 16px !important;
+          height: 16px !important;
+        }
+      }
+    }
+  }
+
+  .github-contributions {
+    grid-row: auto;
+    grid-column-start: auto;
+    grid-row-start: auto;
+  }
+  .grdimg {
+  width:100%;
+  height: auto;
+}
+.grlnk{
+  border-radius: 8px;
+  padding: 10px;
+  width: 45%;
+  .grh3{
+    font-size: 12px; 
+
+}
+}
+
+  .gccc {
+    background-color: #232925;
+    padding: 1.5rem;
+    border-radius: 16px;
+    .gcbox {
+      display: flex;
+      align-items: flex-start;
+      width: 62vw;
+    }
+    .gcwks {
+      display: flex;
+      flex-direction: column;
+      margin-right: 5px;
+      margin-top: 12px;
+      justify-content: space-around;
+      height: 8 * 6 + 5 * 6px;
+      margin-top: 10px;
+    }
+    .gcwkds {
+      font-size: 8px;
+      color: #e4ebe6;
+    }
+    .gcmnts {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+    }
+    .gcmtnm {
+      width: 10px;
+      text-align: center;
+      font-size: 8px;
+      margin: 0.5px;
+      color: #e4ebe6;
+    }
+    .gccntbc {
+      width: 8px;
+      height: 8px;
+      margin: 1.5px;
+      border-radius: 2px;
+    }
+  }
+  .skills-container {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 24px 24px 24px;
+    .skill-logo {
+      max-width: 42px;
+      max-height: 42px;
+    }
+    button {
+      padding: 16px;
+    }
+  }
+}
+
+
+
+.had{
+  color: #2b2b2b;
+  margin: 2rem 0;
+}

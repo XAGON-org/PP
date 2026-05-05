@@ -1,0 +1,183 @@
+{
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate software developer with a keen interest in building scalable web applications and exploring new technologies. I love to solve complex problems and continuously learn to improve my skills.",
+    "bio": "I am a software developer with a strong foundation in web development and a passion for creating innovative solutions. I have experience in various programming languages and frameworks, and I am always eager to learn new technologies. My goal is to contribute to impactful projects and collaborate with like-minded individuals.",
+    "interests": [
+      "Shopify Development",
+      "UI/UX",
+      "Landing Pages",
+      "Full Stack Development",
+      "Database Management",
+      "App Development",
+      "Performance Marketing",
+      "SEO"
+    ],
+    "profiles": [
+      {
+        "avatarSrc": "https://avatars.githubusercontent.com/u/55579930?s=400",
+        "avatarFallback": "CS",
+        "name": "ChethanS",
+        "location": "Bengaluru, India",
+        "bio": "I am a passionate software developer with a keen interest in building scalable web applications and exploring new technologies. I love to solve complex problems and continuously learn to improve my skills.",
+        "skills": [
+          {
+            "name": "Shopify",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/shopify.png"
+          },
+          {
+            "name": "Shopify Liquid",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/shopify-liquid.png"
+          },
+          {
+            "name": "React",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/react.png"
+          },
+          {
+            "name": "SCSS",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/scss.png"
+          },
+          {
+            "name": "Tailwind CSS",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/tailwind-css.png"
+          },
+          {
+            "name": "HTML",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/html.png"
+          },
+          {
+            "name": "CSS",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/css.png"
+          },
+          {
+            "name": "JavaScript",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/javascript.png"
+          },
+          {
+            "name": "Node.js",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/nodejs.png"
+          },
+          {
+            "name": "Express.js",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/Vector.png"
+          },
+          {
+            "name": "Python",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/python.png"
+          },
+          {
+            "name": "Docker",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/docker.png"
+          },
+          {
+            "name": "Prisma",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/prisma.png"
+          },
+          {
+            "name": "PostgreSQL",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/postgresql.png"
+          },
+          {
+            "name": "Google Cloud Platform",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/google-cloud.png"
+          },
+          {
+            "name": "Firebase",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/firebase.png"
+          },
+          {
+            "name": "MongoDB",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/mongodb.png"
+          },
+          {
+            "name": "Linux",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/linux.png"
+          },
+          {
+            "name": "Git",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/git.png"
+          },
+          {
+            "name": "GitHub",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/github-white.png"
+          },
+          {
+            "name": "VS Code",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/vscode.png"
+          }
+        ]
+      },
+      {
+        "avatarSrc": "https://avatars.githubusercontent.com/u/55579930?s=400",
+        "avatarFallback": "JKR",
+        "name": "Jainesh Kumar R",
+        "location": "Bengaluru, India",
+        "bio": "I am a passionate software developer with a keen interest in building scalable web applications and exploring new technologies. I love to solve complex problems and continuously learn to improve my skills.",
+        "skills": [
+          {
+            "name": "Google Search Console",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/search-console-icon.png"
+          },
+          {
+            "name": "Google Tag Manager",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/google-tag-manager-svgrepo-com.png"
+          },
+          {
+            "name": "Google Merchant Center",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/google-merchant-center.png"
+          },
+          {
+            "name": "Google Analytics",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/google-analytics.png"
+          },
+          {
+            "name": "Figma",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/figma.png"
+          },
+          {
+            "name": "Adobe Photoshop",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/figma.png"
+          },
+          {
+            "name": "Adobe Illustrator",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/figma.png"
+          },
+          {
+            "name": "Adobe Express",
+
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/figma.png"
+          },
+          {
+            "name": "Canva",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/figma.png"
+          },
+          {
+            "name": "SEO",
+            "logo": "https://chethan025.github.io/Webfolio/src/assets/images/logo/figma.png"
+          }
+        ]
+      }
+    ]
+  }
+}

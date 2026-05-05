@@ -1,0 +1,68 @@
+
+
+@use "./mixins" as *;
+
+/* color */
+$bgclr : #c7c7c7;
+$color: #2b2b2b;
+$navbg: #2b2b2b;
+
+/* padding */
+$btnpdn1: 0.7rem 3rem;
+
+/* margins */
+$mrgn1: .4rem;
+
+/* borders */
+$btnbrdr1: 1px solid $color;
+$btnbdrds1: 24px;
+$btnbdrds2: 22px;
+
+/* fonts */
+$font-montserrat: 'Montserrat', sans-serif;
+$font-conquera: 'Conquera';
+$font-Recepts: 'Recepts NF W01 Regular';
+
+*{
+    box-sizing: border-box;;
+}
+
+body{
+    background-color: $bgclr;
+    color: $color;
+    margin: 1rem;
+    scroll-behavior: smooth;
+}
+.yuyd{
+    height:50vw;
+
+}
+.section{
+    margin: 0 2rem 2rem;
+    padding: 1rem 0;
+    font-family: $font-montserrat;
+}
+.abc0{
+    opacity: 0;
+}
+/* .mainappcontainer{
+    background:radial-gradient(27.25% 34.55% at 50% 40%, rgba(255, 255, 255, 0.10) 0%, rgba(225, 233, 230, 0.01) 100%);
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+@include respond(md) {
+    .section{
+    height:100%;
+    margin: 0 .8rem 1rem;
+    padding: 1rem 0;
+    font-family: $font-montserrat;
+}
+
+.mainappcontainer{
+    background:radial-gradient(52.25% 44.55% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(225, 233, 230, 0.01) 88%);
+
+}
+}
