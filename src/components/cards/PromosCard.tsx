@@ -34,7 +34,7 @@ export function PromoVideoGallery() {
             <img
               src={item.thumbnail}
               alt={item.title}
-              className="h-72 w-full object-cover transition duration-500 group-hover:scale-105"
+              className="h-56 w-full object-contain transition duration-500 group-hover:scale-105"
             />
 
             {/* OVERLAY */}

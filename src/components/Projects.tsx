@@ -6,7 +6,7 @@ import data from "../utils/data.json";
 // --- CARD COMPONENTS ---
 import { ShopifyCard } from "./cards/ShopifyCard";
 import { UIUXCard } from "./cards/UIUXCard";
-import { PostersCard } from "./cards/PostersCard";
+import { ImageGallery } from "./cards/PostersCard";
 import { PromoVideoGallery } from "./cards/PromosCard";
 
 // --- TYPES ---
@@ -40,7 +40,7 @@ const categories: ActiveCategory[] = [
 const componentMap = {
   Shopify: ShopifyCard,
   "UI/UX": UIUXCard,
-  Posters: PostersCard,
+  Posters: ImageGallery,
   Promos: PromoVideoGallery,
 } as const;
 
@@ -56,7 +56,7 @@ export default function Projects() {
     "max-w-6xl mx-auto grid md:grid-cols-3 gap-8",
 
   Posters:
-    "max-w-5xl mx-auto grid md:grid-cols-4 gap-6",
+    "",
 
   Promos:
     "",

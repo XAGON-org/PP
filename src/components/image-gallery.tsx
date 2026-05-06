@@ -3,14 +3,14 @@
 import React from 'react';
 import { cn } from '@lib/utils';
 import { useInView } from 'framer-motion';
-import { AspectRatio } from '../aspect-ratio';
+import { AspectRatio } from 'src/components/aspect-ratio';
 
 export function ImageGallery() {
 	return (
 		<div className="relative flex min-h-screen w-full flex-col items-center justify-center py-10 px-4">
-			<div className="mx-auto grid w-full max-w-8xl gap-6 sm:grid-cols-2 lg:grid-cols-6">
+			<div className="mx-auto grid w-full max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-6">
 				
-				{Array.from({ length: 6 }).map((_, col) => (
+				{Array.from({ length: 3 }).map((_, col) => (
 					<div key={col} className="grid gap-6">
 						{Array.from({ length: 10 }).map((_, index) => {
 							const isPortrait = Math.random() > 0.5;
