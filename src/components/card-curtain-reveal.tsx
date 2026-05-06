@@ -50,7 +50,7 @@ const CardCurtainReveal = React.forwardRef<
       <div
         ref={ref}
         className={cn(
-          "relative flex flex-col gap-2 overflow-hidden",
+          "relative rounded-4xl flex flex-col gap-2 overflow-hidden",
           className
         )}
         onMouseEnter={handleMouseEnter}

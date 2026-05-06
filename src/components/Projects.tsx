@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import data from "../utils/data.json";
-
+// import '../styles/projects.scss'
 // --- CARD COMPONENTS ---
 import { ShopifyCard } from "./cards/ShopifyCard";
 import { UIUXCard } from "./cards/UIUXCard";
 import { PostersCard } from "./cards/PostersCard";
-import { PromosCard } from "./cards/PromosCard";
+import { PromoVideoGallery } from "./cards/PromosCard";
 
 // --- TYPES ---
 type Project = {
@@ -41,19 +41,30 @@ const componentMap = {
   Shopify: ShopifyCard,
   "UI/UX": UIUXCard,
   Posters: PostersCard,
-  Promos: PromosCard,
+  Promos: PromoVideoGallery,
 } as const;
 
 export default function Projects() {
-  const [activeCategory, setActiveCategory] =
-    useState<ActiveCategory>("All");
+  const [activeCategory, setActiveCategory] = useState<ActiveCategory>("All");
+  const gridClassMap = {
+  All: "max-w-6xl mx-auto grid md:grid-cols-4 gap-8",
+
+  Shopify:
+    "max-w-7xl mx-auto grid md:grid-cols-3 gap-10",
+
+  "UI/UX":
+    "max-w-6xl mx-auto grid md:grid-cols-3 gap-8",
+
+  Posters:
+    "max-w-5xl mx-auto grid md:grid-cols-4 gap-6",
+
+  Promos:
+    "",
+} as const;
 
   return (
     <div className="text-white min-h-screen px-6 py-12">
-      
-      <h1 className="text-4xl font-semibold text-center mb-10">
-        Projects
-      </h1>
+      <h1 className="text-4xl font-semibold text-center mb-10">Projects</h1>
 
       {/* CATEGORY PILLS */}
       <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -71,9 +82,9 @@ export default function Projects() {
           </button>
         ))}
       </div>
+      
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
-
+      <div className={gridClassMap[activeCategory]}>
         {/* ALL → SHOW CATEGORIES */}
         {activeCategory === "All" &&
           (Object.entries(services) as [Category, CategoryData][]).map(
@@ -88,11 +99,9 @@ export default function Projects() {
                   alt={category.name}
                   className="w-12 h-12 mx-auto mb-4"
                 />
-                <h2 className="text-xl font-semibold">
-                  {category.name}
-                </h2>
+                <h2 className="text-xl font-semibold">{category.name}</h2>
               </div>
-            )
+            ),
           )}
 
         {/* CATEGORY → PROJECTS */}
@@ -100,11 +109,18 @@ export default function Projects() {
           services[activeCategory].items.map((project) => {
             const CardComponent = componentMap[activeCategory];
 
+            // 🔥 CATEGORY BASED WRAPPER CLASSES
+            const wrapperClasses = {
+              Shopify: "nigga",
+              "UI/UX": "rotate-0",
+              Posters: "scale-95",
+              Promos: "translate-y-4",
+            }[activeCategory];
+
             return (
-              <CardComponent
-                key={project.id}
-                project={project}
-              />
+              <div key={project.id} className={wrapperClasses}>
+                <CardComponent project={project} />
+              </div>
             );
           })}
       </div>

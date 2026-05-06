@@ -14,28 +14,29 @@ import { Button } from "../button";
 
 export function ShopifyCard({ project }: any) {
   return (
-    <CardCurtainReveal className="h-[560px] w-96 border border-zinc-100 bg-zinc-950 text-zinc-50 shadow">
+    <CardCurtainReveal className="h-[560px] w-96 border border-zinc-100 bg-[#2b2b2b] text-zinc-50 shadow">
 
       <CardCurtainRevealBody>
 
         {/* IMAGE */}
-        <CardCurtainRevealTitle>
+        <CardCurtainRevealTitle 
+        className="h-20 text-start">
           <img
-            src={project.image}
+            src={project.logo}
             alt={project.title}
-            className="w-full h-48 object-cover rounded-md"
+            className="w-50 min-h-20 max-w-40 max-h-20 text-start object-contain rounded-md"
           />
         </CardCurtainRevealTitle>
 
         {/* TITLE */}
-        <h3 className="text-xl font-semibold mt-4">
+        {/* <h3 className="text-xl font-semibold mt-4">
           {project.title}
-        </h3>
+        </h3> */}
 
         {/* DESCRIPTION */}
         <CardCurtainRevealDescription className="my-4">
           <p>
-            Scalable Shopify store built with performance and conversion-focused design.
+            {project.desc}
           </p>
         </CardCurtainRevealDescription>
 
