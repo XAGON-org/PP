@@ -12,7 +12,7 @@ export function ImageGallery() {
 				
 				{Array.from({ length: 6 }).map((_, col) => (
 					<div key={col} className="grid gap-6">
-						{Array.from({ length: 10 }).map((_, index) => {
+						{Array.from({ length: 5 }).map((_, index) => {
 							const isPortrait = Math.random() > 0.5;
 							const width = isPortrait ? 1080 : 1920;
 							const height = isPortrait ? 1920 : 1080;

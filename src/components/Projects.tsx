@@ -47,10 +47,10 @@ const componentMap = {
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState<ActiveCategory>("All");
   const gridClassMap = {
-  All: "max-w-6xl mx-auto grid md:grid-cols-4 gap-8",
+  All: "max-w-6xl mx-auto grid md:grid-cols-4 gap-8 h-full align-items-center",
 
   Shopify:
-    "max-w-7xl mx-auto grid md:grid-cols-3 gap-10",
+    "max-w-[90%] mx-auto grid md:grid-cols-4 gap-10",
 
   "UI/UX":
     "max-w-6xl mx-auto grid md:grid-cols-3 gap-8",
@@ -63,8 +63,8 @@ export default function Projects() {
 } as const;
 
   return (
-    <div className="text-white min-h-screen px-6 py-12">
-      <h1 className="text-4xl font-semibold text-center mb-10">Projects</h1>
+    <div className="text-white  px-6 py-12">
+      <h1 className="text-4xl text-[#2b2b2b] font-semibold text-center mb-10">Projects</h1>
 
       {/* CATEGORY PILLS */}
       <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -72,10 +72,10 @@ export default function Projects() {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`px-5 py-2 rounded-full text-sm transition ${
+            className={`px-5 py-2 rounded-full text-sm text-black transition ${
               activeCategory === cat
-                ? "bg-blue-600"
-                : "bg-gray-800 hover:bg-gray-700"
+                ? "bg-[#2b2b2b] text-white"
+                : "border border-gray-800 hover:bg-[#2b2b2b]/25 hover:text-white"
             }`}
           >
             {cat}
@@ -92,12 +92,12 @@ export default function Projects() {
               <div
                 key={key}
                 onClick={() => setActiveCategory(key)}
-                className="bg-gray-900 p-10 rounded-2xl cursor-pointer border border-gray-800 hover:scale-105 transition text-center"
+                className=" hover:bg-[#2b2b2b] hover:text-white p-10 text-black rounded-2xl cursor-pointer border border-gray-800 hover:scale-105 transition text-center"
               >
                 <img
                   src={category.logo}
                   alt={category.name}
-                  className="w-12 h-12 mx-auto mb-4"
+                  className="w-20 h-20 mx-auto mb-4"
                 />
                 <h2 className="text-xl font-semibold">{category.name}</h2>
               </div>

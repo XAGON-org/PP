@@ -14,7 +14,7 @@ import { Button } from "../button";
 
 export function ShopifyCard({ project }: any) {
   return (
-    <CardCurtainReveal className="h-[560px] w-96 border border-zinc-100 bg-[#2b2b2b] text-zinc-50 shadow">
+    <CardCurtainReveal className="h-[560px] w-full border border-zinc-100 bg-[#2b2b2b] text-zinc-50 shadow">
 
       <CardCurtainRevealBody>
 

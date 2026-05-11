@@ -331,7 +331,7 @@ export const AnimatedProfileCard = React.forwardRef<
           } as React.CSSProperties
         }
         className={cn(
-          'relative h-fit w-[40%] overflow-hidden rounded-3xl border-2',
+          'relative h-fit w-[100%] md:w-[40%] overflow-hidden rounded-3xl border-2',
           className
         )}
         {...props}

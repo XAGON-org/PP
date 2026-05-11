@@ -28,7 +28,7 @@ export default function AnimatedProfileCardLightDemo() {
   return (
     <>
     <p className="text-2xl font-semibold text-center">Our Team</p>
-    <div className="flex min-h-[100%] w-full items-center justify-center gap-6 flex-wrap bg-background p-4">
+    <div className="flex flex-col md:flex-row min-h-[100%] w-full items-center justify-center gap-6 flex-wrap bg-background p-4">
       {cardsData.map((card, index) => (
         <AnimatedProfileCard
           key={index}
